@@ -52,27 +52,27 @@ section#allTxt > div:first-child {
 }
 
 .Images {
-  flex: 1; 
+  flex: 1;
   display: grid;
   grid-template-rows: repeat(3, minmax(0, 1fr));
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 0.5rem;
 }
 
-.Images div:nth-child(1) { 
-  grid-row: 1; 
-  grid-column: 1; 
-  animation: fadeIn 0.5s 0.55s ease both; 
+.Images div:nth-child(1) {
+  grid-row: 1;
+  grid-column: 1;
+  animation: fadeIn 0.5s 0.55s ease both;
 }
-.Images div:nth-child(2) { 
-  grid-row: 2; 
-  grid-column: 1; 
-  animation: fadeIn 0.5s 0.68s ease both; 
+.Images div:nth-child(2) {
+  grid-row: 2;
+  grid-column: 1;
+  animation: fadeIn 0.5s 0.68s ease both;
 }
-.Images div:nth-child(3) { 
-  grid-row: 3; 
-  grid-column: 1; 
-  animation: fadeIn 0.5s 0.81s ease both; 
+.Images div:nth-child(3) {
+  grid-row: 3;
+  grid-column: 1;
+  animation: fadeIn 0.5s 0.81s ease both;
 }
 
 .Images div:last-child {
@@ -136,5 +136,41 @@ section#allTxt > div:first-child {
   to {
     opacity: 1;
     transform: scale(1);
+  }
+}
+
+@media (max-width: 900px) {
+  #imgTopBg,
+  #titleTopBG {
+    height: 20rem;
+  }
+
+  #titleTopBG {
+    padding-inline: 1rem;
+    justify-content: flex-end;
+    padding-bottom: 1.5rem;
+  }
+
+  #titleTopBG h1 {
+    font-size: clamp(2rem, 9vw, 3rem);
+    line-height: 1.05;
+  }
+
+  section#allTxt {
+    margin-top: 20rem;
+    margin-inline: 1rem;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .Images {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: none;
+    gap: 0.75rem;
+  }
+
+  .Images div:last-child {
+    grid-column: auto;
+    grid-row: auto;
   }
 }

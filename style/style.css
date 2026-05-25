@@ -175,6 +175,96 @@ section#allTxt {
   transform: scale(1.06);
 }
 
+@media (max-width: 992px) {
+  #imgTopBg,
+  #titleTopBG {
+    height: 34rem;
+  }
+
+  #titleTopBG {
+    padding-inline: 2rem;
+  }
+
+  #titleTopBG h1 {
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+  }
+
+  #titleTopBG h2 {
+    font-size: clamp(1.1rem, 2.3vw, 1.6rem);
+  }
+
+  section#allTxt {
+    margin-top: 34rem;
+    margin-inline: 1rem;
+  }
+
+  .turGrid {
+    gap: 1rem;
+    margin: 1rem 0;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .turIMG {
+    grid-column: span 1 / span 1 !important;
+    height: 15rem;
+  }
+
+  .turIMG:nth-child(-n + 2) {
+    height: 15rem;
+  }
+
+  .turIMG h3 {
+    font-size: 1.1rem;
+    margin: 18px;
+    margin-right: 32px;
+  }
+}
+
+@media (max-width: 640px) {
+  #imgTopBg,
+  #titleTopBG {
+    height: 24rem;
+  }
+
+  #titleTopBG {
+    padding-inline: 1rem;
+    justify-content: flex-end;
+    padding-bottom: 1.5rem;
+  }
+
+  #titleTopBG h1 {
+    font-size: clamp(2rem, 10vw, 2.8rem);
+    line-height: 1.05;
+  }
+
+  #titleTopBG h2 {
+    font-size: 1rem;
+  }
+
+  section#allTxt {
+    margin-top: 24rem;
+  }
+
+  #allTxt h1 {
+    font-size: 2rem;
+  }
+
+  .turGrid {
+    grid-template-columns: 1fr;
+    gap: 0.9rem;
+  }
+
+  .turIMG {
+    height: 12.5rem;
+  }
+
+  .turIMG h3 {
+    font-size: 1rem;
+    margin: 16px;
+    margin-right: 24px;
+  }
+}
+
 @keyframes fadeUp {
   from {
     opacity: 0;

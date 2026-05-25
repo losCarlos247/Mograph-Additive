@@ -143,3 +143,50 @@ section#allTxt {
     transform: translateY(0);
   }
 }
+
+@media (max-width: 900px) {
+  #imgTopBg,
+  #titleTopBG {
+    height: 20rem;
+  }
+
+  #titleTopBG {
+    padding-inline: 1rem;
+    justify-content: flex-end;
+    padding-bottom: 1.5rem;
+  }
+
+  #titleTopBG h1 {
+    font-size: clamp(2rem, 9vw, 3rem);
+    line-height: 1.05;
+  }
+
+  section#allTxt {
+    margin-top: 20rem;
+    margin-inline: 1rem;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .info h2 {
+    font-size: 2.1rem;
+  }
+
+  .info p {
+    font-size: 1rem;
+  }
+
+  .Images {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  .Images a div {
+    width: min(100%, 10rem);
+    height: 10rem;
+  }
+
+  .Images h4 {
+    font-size: 1.1rem;
+  }
+}

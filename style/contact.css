@@ -110,3 +110,36 @@ section#allTxt {
     transform: translateY(0);
   }
 }
+
+@media (max-width: 900px) {
+  #imgTopBg,
+  #titleTopBG {
+    height: 20rem;
+  }
+
+  #titleTopBG {
+    padding-inline: 1rem;
+    justify-content: flex-end;
+    padding-bottom: 1.5rem;
+  }
+
+  #titleTopBG h1 {
+    font-size: clamp(2rem, 9vw, 3rem);
+    line-height: 1.05;
+  }
+
+  section#allTxt {
+    margin-top: 20rem;
+    margin-inline: 1rem;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  #allTxt img {
+    width: min(100%, 18rem);
+  }
+
+  .cntct p {
+    font-size: 1.1rem;
+  }
+}
